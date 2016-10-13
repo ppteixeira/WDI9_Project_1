@@ -1,0 +1,125 @@
+
+.container {
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+  position: absolute;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+
+}
+.players {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.player {
+  width: 30%;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: silver;
+  padding: 1em;
+
+}
+
+/*.player2 {
+  width: 30%;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: silver;
+  padding: 1em;
+}*/
+
+.totalTime {
+  margin: 1em;
+  text-align: center;
+
+}
+
+.board {
+  background-image: url("../images/board.png");
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+}
+.line {
+  position: relative;
+  height: 33.3333333%;
+  width: 100%;
+
+  text-align: center;
+}
+.square {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 33.3333333%;
+  height: 33.3333333%;
+  font-family: 'Just Another Hand', cursive;
+  text-align: center;
+  font-size: 7.5em;
+  padding-top: 0.15em;
+
+}
+.square :hover{
+  
+}
+.cross{
+  /*background-image: url("../images/cross.png");*/
+  background-size: contain;
+  color: #dd3044;
+}
+.nought{
+  /*background-image: url("../images/Nought.png");*/
+  background-size: contain;
+  color: navy;
+}
+.empty{
+
+}
+.result {
+
+}
+
+
+body {
+  background-color: black;
+}
+
+@media (min width:) {
+  .container {
+    width:
+  }
+
+  .title {
+
+  }
+
+  .player1 {
+
+  }
+
+  .player2 {
+
+  }
+
+  .totalTime {
+
+  }
+
+  .board {
+
+  }
+
+  .result {
+
+  }
+
+
+}
