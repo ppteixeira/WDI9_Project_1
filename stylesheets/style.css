@@ -1,52 +1,88 @@
-
+.form{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 6vw;
+}
 .container {
-  width: 95%;
+  width: 70%;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: white;
   padding: 1em;
   position: absolute;
   height: auto;
+  background-image: url('../images/blankPaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 6%;
+  height: 89%;
 }
 
 .title {
   text-align: center;
+  font-size: 1.4vw;
+  margin-top: 10%;
 
+}
+.game{
+  display: none;
+  min-width: 400px;
+  max-width: 600px;
+  max-height: 500px;
+  min-height: 400px;
+  height: 100%;
+  margin: 0 auto;
 }
 .players {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 3vw;
 }
 
-.player {
-  width: 30%;
+
+.player1 {
+  width: 25%;
   margin: 0 auto;
   display: inline-block;
-  background-color: silver;
-  padding: 1em;
-
+  color: #dd3044;
+}
+.player1 p {
+  margin: 2%;
+}
+.eraser {
+  width: 25%;
+  margin: 0 auto;
+  display: inline-block;
+}
+.player2 {
+  width: 25%;
+  margin: 0 auto;
+  display: inline-block;
+  color: navy;
+}
+.player2 p {
+  margin: 2%;
 }
 
-/*.player2 {
-  width: 30%;
-  margin: 0 auto;
-  display: inline-block;
-  background-color: silver;
-  padding: 1em;
-}*/
-
-.totalTime {
+.displayResult {
+  height: 1%;
   margin: 1em;
   text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 3vw;
 
 }
 
 .board {
-  background-image: url("../images/board.png");
-  width: 360px;
-  height: 360px;
+  /*background-image: url(../images/board.png);*/
+  width: 50%;
+  height: 50%;
   margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .line {
   position: relative;
@@ -58,17 +94,26 @@
 .square {
   box-sizing: border-box;
   position: relative;
-  display: inline-block;
+  display: block;
   width: 33.3333333%;
   height: 33.3333333%;
   font-family: 'Just Another Hand', cursive;
   text-align: center;
-  font-size: 7.5em;
-  padding-top: 0.15em;
+  font-size: 5em;
+  float: left;
+  padding-top: 5%;
+}
+
+.hoverCross:hover{
+  background-image: url('../images/cross.png');
+  background-size: contain;
+  margin: 0 auto;
 
 }
-.square :hover{
-  
+.hoverNought:hover{
+  background-image: url('../images/nought.png');
+  background-size: contain;
+  margin: 0 auto;
 }
 .cross{
   /*background-image: url("../images/cross.png");*/
@@ -86,40 +131,84 @@
 .result {
 
 }
+#sqr-0{
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+#sqr-1{
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+#sqr-2{
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+#sqr-3{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+#sqr-4{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+#sqr-5{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+#sqr-6{
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+#sqr-7{
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
 
-
+}
+#sqr-8{
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
 body {
-  background-color: black;
+  background-image: url("../images/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (min width:) {
+@media (max-width: 720px) {
   .container {
-    width:
-  }
-
-  .title {
+    background-size: contain;
+    min-width: 300px;
 
   }
 
-  .player1 {
+  .players {
+    font-size: 6vw;
+  }
+  .form {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    background-size: cover;
+    max-width: 559px;
 
   }
 
-  .player2 {
-
+  .players {
+    font-size: 4vw;
   }
-
-  .totalTime {
-
+  .form {
+    font-size: 4vw;
   }
-
-  .board {
-
-  }
-
-  .result {
-
-  }
-
+  
+}
+@media (max-width: 620) {
 
 }
