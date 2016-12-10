@@ -6,39 +6,37 @@
     <link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <div class="title">
         <h1>Tic Tac Toe</h1>
       </div>
+
       <div class="form">
-
-            Player 1 Name:<br>
-            <input type="text" id="inputP1Name"><br>
-            Crosses or Noughts:<br>
-            <input type="radio" value=1 name="symbol">X<br>
-            <input type="radio" value=2 name="symbol">O<br><br><br>
-
-            Player 2 Name:<br>
-            <input type="text" id="inputP2Name"><br>
-            <input type="button" id='btnStart' value="button">
+        Player 1 Name:<br>
+        <input type="text" id="inputP1Name"><br>
+        Crosses or Noughts:<br>
+        <input type="radio" value=1 name="symbol">X<br>
+        <input type="radio" value=2 name="symbol">O<br><br><br>
+        Player 2 Name:<br>
+        <input type="text" id="inputP2Name"><br>
+        <input type="button" id='btnStart' value="button">
       </div>
+
       <div class="game">
         <div class="players">
           <div id="player1" class="player1">  </div>
           <div class="eraser"></div>
           <div id='player2' class="player2">  </div>
         </div>
-        <div class="displayResult">
-
-        </div>
-        <div class="board"> </div>
-        <div class="result"> </div>
-        <div></div>
+        <div class="displayResult"></div>
+        <div class="board"></div>
+        <div class="result"></div>
       </div>
     </div>
+
     <script src="scripts/jquery-3.1.1.min.js" charset="utf-8"></script>
-    <!-- <script src="scripts/main.js" charset="utf-8"></script> -->
-    <script src="scripts/main3.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -31,10 +31,3 @@
 
   I tried to make it look like a casual game between friends in a place that
   could be an Office, School or even at home. Where there is a table with few belongings.
-
-###Future Additions
-
-  On the future, I would like to add the option of themes for the users to selecet, that would change the way that the whole page looks.
-  Changing Background, board and figures.
-
-  I also would like to add possibilities to increase the number of squares to add complexity to the game.

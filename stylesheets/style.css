@@ -1,10 +1,13 @@
-.form{
+.form {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   font-family: 'Just Another Hand', cursive;
+  /*avoid vw/vh for font sizes */
+  /* font sizes as ems usually better*/
   font-size: 6vw;
 }
+
 .container {
   width: 70%;
   box-sizing: border-box;
@@ -23,8 +26,8 @@
   text-align: center;
   font-size: 1.4vw;
   margin-top: 10%;
-
 }
+
 .game{
   display: none;
   min-width: 400px;
@@ -34,6 +37,7 @@
   height: 100%;
   margin: 0 auto;
 }
+
 .players {
   width: 80%;
   margin: 0 auto;
@@ -42,16 +46,19 @@
   font-size: 3vw;
 }
 
-
 .player1 {
   width: 25%;
   margin: 0 auto;
   display: inline-block;
   color: #dd3044;
 }
+
+/*consistent color method*/
+
 .player1 p {
   margin: 2%;
 }
+
 .eraser {
   width: 25%;
   margin: 0 auto;
@@ -88,7 +95,6 @@
   position: relative;
   height: 33.3333333%;
   width: 100%;
-
   text-align: center;
 }
 .square {
@@ -104,18 +110,20 @@
   padding-top: 5%;
 }
 
-.hoverCross:hover{
-  background-image: url('../images/cross.png');
-  background-size: contain;
-  margin: 0 auto;
+/* squre-tile-font */
 
+
+.jah-font {
+  font-family: 'Just Another Hand', cursive;
 }
-.hoverNought:hover{
-  background-image: url('../images/nought.png');
-  background-size: contain;
+
+
+.hover-div{
+  color: #adadad;
   margin: 0 auto;
 }
-.cross{
+
+.cross {
   /*background-image: url("../images/cross.png");*/
   background-size: contain;
   color: #dd3044;
@@ -131,6 +139,10 @@
 .result {
 
 }
+
+
+/* use divs or other tags to group similar elements */
+
 #sqr-0{
   border-bottom: 3px solid black;
   border-right: 3px solid black;
@@ -175,10 +187,12 @@
   border-left: 3px solid black;
 }
 body {
-  background-image: url("../images/main-background.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../images/table-bkg.jpg");
+  background-repeat: repeat-y;
   background-size: cover;
 }
+
+/* using ems is recommended */
 
 @media (max-width: 720px) {
   .container {
@@ -194,11 +208,11 @@ body {
     font-size: 6vw;
   }
 }
+
 @media (min-width: 800px) {
   .container {
     background-size: cover;
     max-width: 559px;
-
   }
 
   .players {
