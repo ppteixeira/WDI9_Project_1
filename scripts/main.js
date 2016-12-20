@@ -114,7 +114,8 @@ function makeBoardListen() {
           // Stop event listener (game over)
           $('.board').off();
           $('.displayResult').text(player1.nick + ' Win!').css("color", "#dd3044");
-          var $eraser = $('<button>').attr({id:"resetBtn",type:"button"}).text('Play Again!');
+          //var $eraser = $('<button>').attr({id:"resetBtn",type:"button"}).text('Play Again!');
+          var $eraser = $('<img src="images/eraser.png">').attr({id:"resetBtn",type:"button"}).text('Play Again!');
           $('.eraser').append($eraser);
         } else if (result == false && totalMoves == 9) {
             $('.board').off();
@@ -133,12 +134,12 @@ function makeBoardListen() {
           // Stop event listener (game over)
           $('.board').off();
           $('.displayResult').text(player2.nick + ' Win!').css("color", "navy");
-          var $eraser = $('<button>').attr({id:"resetBtn",type:"button"}).text('Play Again!');
+          var $eraser = $('<img src="images/eraser.png">').attr({id:"resetBtn",type:"button"}).text('Play Again!');
           $('.eraser').append($eraser);
         }else if (result == false && totalMoves == 9) {
           $('.board').off();
           $('.displayResult').text('Tie game!').css("color", "grey");
-          var $eraser = $('<button>').attr({id:"resetBtn",type:"button"}).text('Play Again!');
+          var $eraser = $('<img src="images/eraser.png">').attr({id:"resetBtn",type:"button"}).text('Play Again!');
           $('.eraser').append($eraser);
           $('.square').removeClass('hoverNought','hoverCross');
         }

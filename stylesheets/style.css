@@ -63,6 +63,7 @@
   width: 25%;
   margin: 0 auto;
   display: inline-block;
+  cursor: pointer;
 }
 .player2 {
   width: 25%;
@@ -139,6 +140,9 @@
 .result {
 
 }
+#resetBtn {
+  width: 3em;
+}
 
 
 /* use divs or other tags to group similar elements */
@@ -187,7 +191,7 @@
   border-left: 3px solid black;
 }
 body {
-  background-image: url("../images/table-bkg.jpg");
+  background-image: url("../images/main-background.jpg");
   background-repeat: repeat-y;
   background-size: cover;
 }
